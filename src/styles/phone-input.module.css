@@ -1,0 +1,189 @@
+/* @type */
+
+.reactTelInput {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: normal;
+  display: flex;
+}
+
+.reactTelInput:disabled {
+  cursor: not-allowed;
+}
+
+.hide {
+  display: none;
+}
+
+.vHide {
+  visibility: hidden;
+}
+
+.reactTelInput input[type=text],
+.reactTelInput input[type=tel] {
+  background: #FFF;
+  border: 0.1rem solid #CACACA;
+  border-radius: 0 0.5rem 0.5rem 0;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0.6rem;
+  outline: none;
+  box-sizing: content-box;
+}
+
+.reactTelInput input[type=text].invalidNumber,
+.reactTelInput input[type=tel].invalidNumber {
+  border: 0.1rem solid #D79F9F;
+  background-color: #FAF0F0;
+  border-left-color: #CACACA;
+}
+
+.reactTelInput input[type=text].invalidNumber:focus,
+.reactTelInput input[type=tel].invalidNumber:focus {
+  border: 0.1rem solid #D79F9F;
+  border-left-color: #CACACA;
+  background-color: #FAF0F0;
+}
+
+.flagDropdown {
+  background-color: #EAEAEA;
+  border: 0.1rem solid #CACACA;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.selectedFlag {
+  border-radius: 0.3rem 0 0 0.3rem;
+  width: 3.8rem;
+  height: 100%;
+  padding: 0 0.4rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.flagDropdown.openDropdown {
+  background: #FFF;
+  border-radius: 0.3rem 0 0 0;
+}
+
+.flagDropdown.openDropdown .selectedFlag {
+  background: #FFF;
+  border-radius: 0.3rem 0 0 0;
+}
+
+.flagDropdown:hover {
+  cursor: pointer;
+}
+
+.flagDropdown:hover .selectedFlag {
+  background-color: #FFF;
+}
+
+.reactTelInput input[disabled] + .flagDropdown:hover {
+  cursor: default;
+}
+
+.reactTelInput input[disabled] + .flagDropdown:hover .selectedFlag {
+  background-color: transparent;
+}
+
+.arrow {
+  border-top: 0.4rem solid #555;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  margin-top: 0.1rem;
+  width: 0;
+  height: 0;
+}
+
+.arrowUp {
+  border-top: none;
+  border-bottom: 0.4rem solid #555;
+}
+
+.listboxContainer {
+  background-color: white;
+  border-radius: 0 0 0.3rem 0.3rem;
+  color: #000;
+  width: 30rem;
+  line-height: normal;
+  margin: 1rem 0 1rem -0.1rem;
+  padding: 0;
+  position: absolute;
+  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.listbox {
+  max-height: 20rem;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.listboxDivider {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #CCC;
+}
+
+.listboxItem {
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.listboxItem:hover {
+  background-color: #F1F1F1;
+}
+
+.listboxItemIcon {
+  margin-right: 1rem;
+}
+
+.listboxItemActive {
+  background-color: #E8E8E8;
+}
+
+.listboxItemName {
+  margin-right: 0.6rem;
+}
+
+.listboxItemDesc {
+  color: #6B6B6B;
+  margin-left: auto;
+}
+
+.search {
+  background-color: #FFF;
+  padding: 1rem 1rem 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.searchEmoji {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+
+.searchBox {
+  border: 0.1rem solid #CACACA;
+  border-radius: 0.3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.3rem 0.8rem 0.5rem;
+  outline: none;
+}
+
+.noEntriesMessage {
+  padding: 0.7rem 1rem 1.1rem;
+  opacity: 0.7;
+}

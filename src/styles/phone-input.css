@@ -1,0 +1,189 @@
+/* @type */
+
+.ReactPhoneInput__reactTelInput {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: normal;
+  display: flex;
+}
+
+.ReactPhoneInput__reactTelInput:disabled {
+  cursor: not-allowed;
+}
+
+.ReactPhoneInput__hide {
+  display: none;
+}
+
+.ReactPhoneInput__vHide {
+  visibility: hidden;
+}
+
+.ReactPhoneInput__reactTelInput input[type=text],
+.ReactPhoneInput__reactTelInput input[type=tel] {
+  background: #FFF;
+  border: 0.1rem solid #CACACA;
+  border-radius: 0 0.5rem 0.5rem 0;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0.6rem;
+  outline: none;
+  box-sizing: content-box;
+}
+
+.ReactPhoneInput__reactTelInput input[type=text].invalidNumber,
+.ReactPhoneInput__reactTelInput input[type=tel].invalidNumber {
+  border: 0.1rem solid #D79F9F;
+  background-color: #FAF0F0;
+  border-left-color: #CACACA;
+}
+
+.ReactPhoneInput__reactTelInput input[type=text].invalidNumber:focus,
+.ReactPhoneInput__reactTelInput input[type=tel].invalidNumber:focus {
+  border: 0.1rem solid #D79F9F;
+  border-left-color: #CACACA;
+  background-color: #FAF0F0;
+}
+
+.ReactPhoneInput__flagDropdown {
+  background-color: #EAEAEA;
+  border: 0.1rem solid #CACACA;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.ReactPhoneInput__selectedFlag {
+  border-radius: 0.3rem 0 0 0.3rem;
+  width: 3.8rem;
+  height: 100%;
+  padding: 0 0.4rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.ReactPhoneInput__flagDropdown.ReactPhoneInput__openDropdown {
+  background: #FFF;
+  border-radius: 0.3rem 0 0 0;
+}
+
+.ReactPhoneInput__flagDropdown.ReactPhoneInput__openDropdown .ReactPhoneInput__selectedFlag {
+  background: #FFF;
+  border-radius: 0.3rem 0 0 0;
+}
+
+.ReactPhoneInput__flagDropdown:hover {
+  cursor: pointer;
+}
+
+.ReactPhoneInput__flagDropdown:hover .ReactPhoneInput__selectedFlag {
+  background-color: #FFF;
+}
+
+.ReactPhoneInput__reactTelInput input[disabled] + .ReactPhoneInput__flagDropdown:hover {
+  cursor: default;
+}
+
+.ReactPhoneInput__reactTelInput input[disabled] + .ReactPhoneInput__flagDropdown:hover .ReactPhoneInput__selectedFlag {
+  background-color: transparent;
+}
+
+.ReactPhoneInput__arrow {
+  border-top: 0.4rem solid #555;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  margin-top: 0.1rem;
+  width: 0;
+  height: 0;
+}
+
+.ReactPhoneInput__arrowUp {
+  border-top: none;
+  border-bottom: 0.4rem solid #555;
+}
+
+.ReactPhoneInput__listboxContainer {
+  background-color: white;
+  border-radius: 0 0 0.3rem 0.3rem;
+  color: #000;
+  width: 30rem;
+  line-height: normal;
+  margin: 1rem 0 1rem -0.1rem;
+  padding: 0;
+  position: absolute;
+  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.ReactPhoneInput__listbox {
+  max-height: 20rem;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.ReactPhoneInput__listboxDivider {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #CCC;
+}
+
+.ReactPhoneInput__listboxItem {
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.ReactPhoneInput__listboxItem:hover {
+  background-color: #F1F1F1;
+}
+
+.ReactPhoneInput__listboxItemIcon {
+  margin-right: 1rem;
+}
+
+.ReactPhoneInput__listboxItemActive {
+  background-color: #E8E8E8;
+}
+
+.ReactPhoneInput__listboxItemName {
+  margin-right: 0.6rem;
+}
+
+.ReactPhoneInput__listboxItemDesc {
+  color: #6B6B6B;
+  margin-left: auto;
+}
+
+.ReactPhoneInput__search {
+  background-color: #FFF;
+  padding: 1rem 1rem 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.ReactPhoneInput__searchEmoji {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+
+.ReactPhoneInput__searchBox {
+  border: 0.1rem solid #CACACA;
+  border-radius: 0.3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.3rem 0.8rem 0.5rem;
+  outline: none;
+}
+
+.ReactPhoneInput__noEntriesMessage {
+  padding: 0.7rem 1rem 1.1rem;
+  opacity: 0.7;
+}
